@@ -1,0 +1,3 @@
+[submodule "project/addons/qodot"]
+	path = project/addons/qodot
+	url = https://github.com/fire/qodot-plugin.git
