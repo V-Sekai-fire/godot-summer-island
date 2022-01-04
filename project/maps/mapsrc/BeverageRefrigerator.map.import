@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/BeverageRefrigerator.map-2aba85b9726e6f72fb9e5082e85e6bac.tres"
+uid="uid://bo84h884yud3d"
+path="res://.godot/imported/BeverageRefrigerator.map-2aba85b9726e6f72fb9e5082e85e6bac.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/BeverageRefrigerator.map"
-dest_files=[ "res://.import/BeverageRefrigerator.map-2aba85b9726e6f72fb9e5082e85e6bac.tres" ]
+dest_files=["res://.godot/imported/BeverageRefrigerator.map-2aba85b9726e6f72fb9e5082e85e6bac.tres"]
 
 [params]
 

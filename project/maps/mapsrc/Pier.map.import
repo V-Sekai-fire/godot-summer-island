@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/Pier.map-e442a3fd76500322e1d2ef3a3f2aa428.tres"
+uid="uid://t52vvd50v6y7"
+path="res://.godot/imported/Pier.map-e442a3fd76500322e1d2ef3a3f2aa428.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/Pier.map"
-dest_files=[ "res://.import/Pier.map-e442a3fd76500322e1d2ef3a3f2aa428.tres" ]
+dest_files=["res://.godot/imported/Pier.map-e442a3fd76500322e1d2ef3a3f2aa428.tres"]
 
 [params]
 

@@ -1,8 +1,9 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/UIOptionButtonArrow.png-67680f98dc06320449db5c9e2703f910.stex"
+type="StreamTexture2D"
+uid="uid://dil6u6rimt0tg"
+path="res://.godot/imported/UIOptionButtonArrow.png-67680f98dc06320449db5c9e2703f910.stex"
 metadata={
 "vram_texture": false
 }
@@ -10,25 +11,25 @@ metadata={
 [deps]
 
 source_file="res://assets/ui/UIOptionButtonArrow.png"
-dest_files=[ "res://.import/UIOptionButtonArrow.png-67680f98dc06320449db5c9e2703f910.stex" ]
+dest_files=["res://.godot/imported/UIOptionButtonArrow.png-67680f98dc06320449db5c9e2703f910.stex"]
 
 [params]
 
 compress/mode=0
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=true
-flags/mipmaps=false
-flags/anisotropic=false
-flags/srgb=2
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-process/invert_color=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=1
 svg/scale=1.0

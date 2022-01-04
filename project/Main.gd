@@ -1,13 +1,13 @@
 extends Node
 
-export (String, FILE) var scene_to_load
+@export_file var scene_to_load
 
 var queue
 
-onready var progress_bar = $LoadingUI/ProgressBar
+@onready var progress_bar = $LoadingUI/ProgressBar
 
-onready var splash = $LoadingSplash
-onready var loading_text = $LoadingUI/LoadingText
+@onready var splash = $LoadingSplash
+@onready var loading_text = $LoadingUI/LoadingText
 
 
 func _ready():

@@ -1,8 +1,9 @@
 # One-shot door only implemented for a little secret
 class_name DoorEntity
-extends KinematicBody
+extends CharacterBody3D
 
-export(Dictionary) var properties setget set_properties
+@export var properties : Dictionary:
+	set=set_properties
 
 var move_dir := Vector3.UP
 var move_dist := 1.0
@@ -69,7 +70,7 @@ func open() -> void:
 	
 	triggered = true
 	dist_to_go = move_dist
-	goal_translation = translation + (move_dir * move_dist)
+	goal_translation = position + (move_dir * move_dist)
 	if audio_node:
 		audio_node.play()
 	emit_signal("move_started")

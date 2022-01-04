@@ -1,13 +1,14 @@
 [remap]
 
-importer="ogg_vorbis"
+importer="oggvorbisstr"
 type="AudioStreamOGGVorbis"
-path="res://.import/Canal3.ogg-7bc2ebb39df0f3d341b785c1116d3211.oggstr"
+uid="uid://bjiponmbith7j"
+path="res://.godot/imported/Canal3.ogg-7bc2ebb39df0f3d341b785c1116d3211.oggvorbisstr"
 
 [deps]
 
 source_file="res://assets/audio/music/Canal3.ogg"
-dest_files=[ "res://.import/Canal3.ogg-7bc2ebb39df0f3d341b785c1116d3211.oggstr" ]
+dest_files=["res://.godot/imported/Canal3.ogg-7bc2ebb39df0f3d341b785c1116d3211.oggvorbisstr"]
 
 [params]
 

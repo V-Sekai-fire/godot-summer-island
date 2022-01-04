@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/DoorSciFi.wav-75a2ea695376931ddc00e2a506de13bc.sample"
+uid="uid://hru0gudfvb5j"
+path="res://.godot/imported/DoorSciFi.wav-75a2ea695376931ddc00e2a506de13bc.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/objects/DoorSciFi.wav"
-dest_files=[ "res://.import/DoorSciFi.wav-75a2ea695376931ddc00e2a506de13bc.sample" ]
+dest_files=["res://.godot/imported/DoorSciFi.wav-75a2ea695376931ddc00e2a506de13bc.sample"]
 
 [params]
 

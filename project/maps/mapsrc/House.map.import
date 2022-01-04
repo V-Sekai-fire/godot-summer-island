@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/House.map-30853e3c642df731753919b9be05c36a.tres"
+uid="uid://bitqu3uv5t740"
+path="res://.godot/imported/House.map-30853e3c642df731753919b9be05c36a.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/House.map"
-dest_files=[ "res://.import/House.map-30853e3c642df731753919b9be05c36a.tres" ]
+dest_files=["res://.godot/imported/House.map-30853e3c642df731753919b9be05c36a.tres"]
 
 [params]
 

@@ -1,12 +1,13 @@
 # This is basic and specific implementation for a little secret.
 
 class_name Trigger
-extends Area
+extends Area3D
 
 const SECRET_CODE = [4, 5, 1]
 var pressed_codes := []
 
-export(Dictionary) var properties setget set_properties
+@export var properties : Dictionary:
+	set=set_properties
 
 var target := ""
 var targetname := ""
@@ -38,8 +39,8 @@ func trigger() -> void:
 
 func _ready() -> void:
 	update_properties()
-	connect("area_entered", self, "_on_area_entered")
-	connect("area_exited", self, "_on_area_exited")
+	connect("area_entered", Callable(self, "_on_area_entered"))
+	connect("area_exited", Callable(self, "_on_area_exited"))
 	
 	audio_node = AudioStreamPlayer3D.new()
 	audio_node.stream = se_beep
@@ -69,7 +70,7 @@ func _input(event: InputEvent) -> void:
 	if monitorting_interaction:
 		if event is InputEventKey and event.pressed:
 			if (KEY_0 <= event.scancode and event.scancode <= KEY_9) or (KEY_KP_0 <= event.scancode and event.scancode <= KEY_KP_9):
-				pressed_codes.append(int(event.as_text()))
+				pressed_codes.append(event.as_text().to_int())
 				audio_node.play()
 				if pressed_codes.size() >= 3:
 					pressed_codes.resize(3)
@@ -77,7 +78,7 @@ func _input(event: InputEvent) -> void:
 				for n in pressed_codes:
 					text += str(n)
 				keypad_ui.text = text
-				yield(audio_node, "finished")
+				await audio_node.finished
 				if pressed_codes.size() == 3:
 					monitorting_interaction = false
 					_check_if_this_game_is_immersive_sim()
@@ -92,7 +93,7 @@ func _check_if_this_game_is_immersive_sim() -> void:
 func _reset_code():
 	audio_node.stream = se_no
 	audio_node.play()
-	yield(audio_node, "finished")
+	await audio_node.finished
 	pressed_codes.clear()
 	keypad_ui.text = ""
 	audio_node.stream = se_beep

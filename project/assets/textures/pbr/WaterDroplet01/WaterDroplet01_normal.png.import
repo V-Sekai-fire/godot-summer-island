@@ -1,36 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path.s3tc="res://.import/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.s3tc.stex"
-path.etc2="res://.import/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.etc2.stex"
+type="StreamTexture2D"
+uid="uid://cb0j7xx80alyu"
+path.s3tc="res://.godot/imported/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.s3tc.stex"
+path.etc2="res://.godot/imported/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.etc2.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
+"imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/textures/pbr/WaterDroplet01/WaterDroplet01_normal.png"
-dest_files=[ "res://.import/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.s3tc.stex", "res://.import/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.etc2.stex" ]
+dest_files=["res://.godot/imported/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.s3tc.stex", "res://.godot/imported/WaterDroplet01_normal.png-77e4a3238bd9f60a40e982176b1c1329.etc2.stex"]
 
 [params]
 
 compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
 compress/bptc_ldr=0
 compress/normal_map=1
-flags/repeat=true
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-process/invert_color=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

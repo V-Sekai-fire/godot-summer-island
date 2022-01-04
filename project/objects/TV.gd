@@ -1,7 +1,8 @@
-tool
-extends Spatial
+@tool
+extends Node3D
 
-export var switch: = true setget _toggle_switch
+@export var switch = true:
+	set=_toggle_switch
 
 func _toggle_switch(new_state) -> void:
 	switch = new_state

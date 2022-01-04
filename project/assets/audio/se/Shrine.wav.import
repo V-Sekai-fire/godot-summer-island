@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Shrine.wav-9e4b06c2117fc97381f99372335fa737.sample"
+uid="uid://5oyw3yyvw0td"
+path="res://.godot/imported/Shrine.wav-9e4b06c2117fc97381f99372335fa737.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/Shrine.wav"
-dest_files=[ "res://.import/Shrine.wav-9e4b06c2117fc97381f99372335fa737.sample" ]
+dest_files=["res://.godot/imported/Shrine.wav-9e4b06c2117fc97381f99372335fa737.sample"]
 
 [params]
 

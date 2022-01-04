@@ -1,7 +1,8 @@
 class_name RotateEntity
-extends KinematicBody
+extends CharacterBody3D
 
-export(Dictionary) var properties setget set_properties
+@export var properties : Dictionary:
+	set=set_properties
 
 var rotate_axis := Vector3.UP
 var rotate_speed := 360.0

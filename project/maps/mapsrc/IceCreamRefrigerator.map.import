@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/IceCreamRefrigerator.map-692be0cd7b54773e038902e0110b6a16.tres"
+uid="uid://cm5b0tvgg7nl7"
+path="res://.godot/imported/IceCreamRefrigerator.map-692be0cd7b54773e038902e0110b6a16.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/IceCreamRefrigerator.map"
-dest_files=[ "res://.import/IceCreamRefrigerator.map-692be0cd7b54773e038902e0110b6a16.tres" ]
+dest_files=["res://.godot/imported/IceCreamRefrigerator.map-692be0cd7b54773e038902e0110b6a16.tres"]
 
 [params]
 

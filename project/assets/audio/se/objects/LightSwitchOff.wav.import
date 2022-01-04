@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/LightSwitchOff.wav-74628467db2acd01f2689e7db77e6ea3.sample"
+uid="uid://cev6gusto3lat"
+path="res://.godot/imported/LightSwitchOff.wav-74628467db2acd01f2689e7db77e6ea3.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/objects/LightSwitchOff.wav"
-dest_files=[ "res://.import/LightSwitchOff.wav-74628467db2acd01f2689e7db77e6ea3.sample" ]
+dest_files=["res://.godot/imported/LightSwitchOff.wav-74628467db2acd01f2689e7db77e6ea3.sample"]
 
 [params]
 

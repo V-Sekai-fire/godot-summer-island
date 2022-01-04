@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Refrigerator.wav-946682b98bfa583a78c7115b93e2b7ae.sample"
+uid="uid://ceapjd2m3qt3i"
+path="res://.godot/imported/Refrigerator.wav-946682b98bfa583a78c7115b93e2b7ae.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/objects/Refrigerator.wav"
-dest_files=[ "res://.import/Refrigerator.wav-946682b98bfa583a78c7115b93e2b7ae.sample" ]
+dest_files=["res://.godot/imported/Refrigerator.wav-946682b98bfa583a78c7115b93e2b7ae.sample"]
 
 [params]
 

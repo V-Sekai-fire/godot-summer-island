@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/Stand.map-8746e9ff57b6e78d09140c33b40a03b1.tres"
+uid="uid://cldneu21m5blg"
+path="res://.godot/imported/Stand.map-8746e9ff57b6e78d09140c33b40a03b1.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/Stand.map"
-dest_files=[ "res://.import/Stand.map-8746e9ff57b6e78d09140c33b40a03b1.tres" ]
+dest_files=["res://.godot/imported/Stand.map-8746e9ff57b6e78d09140c33b40a03b1.tres"]
 
 [params]
 

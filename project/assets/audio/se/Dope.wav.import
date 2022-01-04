@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Dope.wav-9880f8526bd65d3bb6f22d435e634b8f.sample"
+uid="uid://bwq6mlgus3fxu"
+path="res://.godot/imported/Dope.wav-9880f8526bd65d3bb6f22d435e634b8f.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/Dope.wav"
-dest_files=[ "res://.import/Dope.wav-9880f8526bd65d3bb6f22d435e634b8f.sample" ]
+dest_files=["res://.godot/imported/Dope.wav-9880f8526bd65d3bb6f22d435e634b8f.sample"]
 
 [params]
 

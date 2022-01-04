@@ -1,11 +1,15 @@
-extends KinematicBody
+extends CharacterBody3D
 
-export var dir: = Vector3(0.0, 0.0, 1.0) setget _changed_dir
-export (float, 0.001, 10.0) var speed: = 1.0
-export (float, 0.001, 20.0) var length: = 1.0
-export (float, 0.001, 10.0) var radius: = 0.5 setget _changed_radius
 
-export var blow: = false setget _start_blow
+@export var dir: = Vector3(0.0, 0.0, 1.0):
+	set=_changed_dir
+@export_range(0.001, 10.0) var speed: = 1.0
+@export_range(0.001, 20.0) var length: = 1.0
+@export_range(0.001, 10.0) var radius: = 0.5:
+	set=_changed_radius
+
+@export var blow: = false:
+	set=_start_blow
 
 var orig_pos: = Vector3.ZERO
 
@@ -36,13 +40,13 @@ func _start_blow(new_state) -> void:
 		$CollisionShape.disabled = true
 
 func _ready() -> void:
-	orig_pos = translation
-	var c = SphereShape.new()
+	orig_pos = position
+	var c = SphereShape3D.new()
 	$CollisionShape.shape = c
 	$CollisionShape.shape.radius = radius
 
 func _physics_process(delta: float) -> void:
-	translation += dir * speed * delta
+	position += dir * speed * delta
 	
-	if orig_pos.distance_to(translation) >= length:
-		translation = orig_pos
+	if orig_pos.distance_to(position) >= length:
+		position = orig_pos

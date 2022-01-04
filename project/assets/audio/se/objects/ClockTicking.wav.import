@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/ClockTicking.wav-222e534432e0780e9d2d20d94450a52d.sample"
+uid="uid://bqplssn67igq1"
+path="res://.godot/imported/ClockTicking.wav-222e534432e0780e9d2d20d94450a52d.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/objects/ClockTicking.wav"
-dest_files=[ "res://.import/ClockTicking.wav-222e534432e0780e9d2d20d94450a52d.sample" ]
+dest_files=["res://.godot/imported/ClockTicking.wav-222e534432e0780e9d2d20d94450a52d.sample"]
 
 [params]
 

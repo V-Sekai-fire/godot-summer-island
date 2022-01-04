@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/BridgePatch.map-e439ba0f3ccca00439cd5a23d88f2a43.tres"
+uid="uid://cyvhar0gagiyt"
+path="res://.godot/imported/BridgePatch.map-e439ba0f3ccca00439cd5a23d88f2a43.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/BridgePatch.map"
-dest_files=[ "res://.import/BridgePatch.map-e439ba0f3ccca00439cd5a23d88f2a43.tres" ]
+dest_files=["res://.godot/imported/BridgePatch.map-e439ba0f3ccca00439cd5a23d88f2a43.tres"]
 
 [params]
 

@@ -2,12 +2,13 @@
 
 importer="qodot.map"
 type="Resource"
-path="res://.import/MainHouse.map-0d3c41528ae469ab9060827e1b58573c.tres"
+uid="uid://clx0reqwo0eeb"
+path="res://.godot/imported/MainHouse.map-0d3c41528ae469ab9060827e1b58573c.tres"
 
 [deps]
 
 source_file="res://maps/mapsrc/MainHouse.map"
-dest_files=[ "res://.import/MainHouse.map-0d3c41528ae469ab9060827e1b58573c.tres" ]
+dest_files=["res://.godot/imported/MainHouse.map-0d3c41528ae469ab9060827e1b58573c.tres"]
 
 [params]
 

@@ -2,12 +2,13 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/PotBoiling.wav-de0c16a59f0afeadcf439b780580c55f.sample"
+uid="uid://dp2aeunfs08ao"
+path="res://.godot/imported/PotBoiling.wav-de0c16a59f0afeadcf439b780580c55f.sample"
 
 [deps]
 
 source_file="res://assets/audio/se/objects/PotBoiling.wav"
-dest_files=[ "res://.import/PotBoiling.wav-de0c16a59f0afeadcf439b780580c55f.sample" ]
+dest_files=["res://.godot/imported/PotBoiling.wav-de0c16a59f0afeadcf439b780580c55f.sample"]
 
 [params]
 

@@ -6,169 +6,191 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
-_global_script_classes=[ {
-"base": "KinematicBody",
-"class": "DoorEntity",
-"language": "GDScript",
+_global_script_classes=[{
+"base": "CharacterBody3D",
+"class": &"DoorEntity",
+"language": &"GDScript",
 "path": "res://fgd/DoorEntity.gd"
 }, {
-"base": "MultiMeshInstance",
-"class": "LineUpMeshInstance",
-"language": "GDScript",
-"path": "res://tools/LineUpMeshInstance.gd"
+"base": "LiquidLayer",
+"class": &"LavaLayer",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/lava.gd"
 }, {
-"base": "MultiMeshInstance",
-"class": "MergeToMultiMesh",
-"language": "GDScript",
-"path": "res://tools/MergeToMultiMesh.gd"
+"base": "Area3D",
+"class": &"LiquidLayer",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid.gd"
 }, {
-"base": "KinematicBody",
-"class": "Player",
-"language": "GDScript",
-"path": "res://actors/Player.gd"
+"base": "Node3D",
+"class": &"OrbitArm",
+"language": &"GDScript",
+"path": "res://addons/qodot/example_scenes/2-miscallaneous/1-runtime-map-building/orbit_arm.gd"
 }, {
-"base": "Reference",
-"class": "QodotDependencies",
-"language": "GDScript",
+"base": "PhysicsEntity",
+"class": &"PhysicsBall",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/fgd/point_classes/physics_ball.gd"
+}, {
+"base": "RigidDynamicBody3D",
+"class": &"PhysicsEntity",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/fgd/solid_classes/physics.gd"
+}, {
+"base": "RefCounted",
+"class": &"QodotDependencies",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/util/qodot_dependencies.gd"
 }, {
 "base": "QodotSpatial",
-"class": "QodotEntity",
-"language": "GDScript",
+"class": &"QodotEntity",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/nodes/qodot_entity.gd"
 }, {
 "base": "QodotFGDClass",
-"class": "QodotFGDBaseClass",
-"language": "GDScript",
+"class": &"QodotFGDBaseClass",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_base_class.gd"
 }, {
 "base": "Resource",
-"class": "QodotFGDClass",
-"language": "GDScript",
+"class": &"QodotFGDClass",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_class.gd"
 }, {
 "base": "Resource",
-"class": "QodotFGDFile",
-"language": "GDScript",
+"class": &"QodotFGDFile",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_file.gd"
 }, {
 "base": "QodotFGDClass",
-"class": "QodotFGDPointClass",
-"language": "GDScript",
+"class": &"QodotFGDPointClass",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_point_class.gd"
 }, {
 "base": "QodotFGDClass",
-"class": "QodotFGDSolidClass",
-"language": "GDScript",
+"class": &"QodotFGDSolidClass",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_solid_class.gd"
 }, {
 "base": "QodotEntity",
-"class": "QodotLight",
-"language": "GDScript",
-"path": "res://addons/qodot/game-definitions/fgd/point_classes/light.gd"
+"class": &"QodotLight",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/fgd/point_classes/light.gd"
 }, {
 "base": "QodotSpatial",
-"class": "QodotMap",
-"language": "GDScript",
+"class": &"QodotMap",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/nodes/qodot_map.gd"
 }, {
 "base": "EditorPlugin",
-"class": "QodotPlugin",
-"language": "GDScript",
+"class": &"QodotPlugin",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/qodot_plugin.gd"
 }, {
-"base": "Spatial",
-"class": "QodotSpatial",
-"language": "GDScript",
+"base": "CharacterBody3D",
+"class": &"QodotRotateEntity",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/fgd/solid_classes/rotate.gd"
+}, {
+"base": "Node3D",
+"class": &"QodotSpatial",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/nodes/qodot_spatial.gd"
 }, {
-"base": "Reference",
-"class": "QodotTextureLoader",
-"language": "GDScript",
+"base": "RefCounted",
+"class": &"QodotTextureLoader",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/util/qodot_texture_loader.gd"
 }, {
-"base": "Reference",
-"class": "QodotUtil",
-"language": "GDScript",
+"base": "RefCounted",
+"class": &"QodotUtil",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/util/qodot_util.gd"
 }, {
 "base": "Resource",
-"class": "QodotWorldspawnLayer",
-"language": "GDScript",
+"class": &"QodotWorldspawnLayer",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/worldspawn_layer.gd"
 }, {
 "base": "Resource",
-"class": "QuakeMapFile",
-"language": "GDScript",
+"class": &"QuakeMapFile",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/quake_map_file.gd"
 }, {
 "base": "EditorImportPlugin",
-"class": "QuakeMapImportPlugin",
-"language": "GDScript",
+"class": &"QuakeMapImportPlugin",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/import_plugins/quake_map_import_plugin.gd"
 }, {
 "base": "Resource",
-"class": "QuakePaletteFile",
-"language": "GDScript",
+"class": &"QuakePaletteFile",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/quake_palette_file.gd"
 }, {
 "base": "EditorImportPlugin",
-"class": "QuakePaletteImportPlugin",
-"language": "GDScript",
+"class": &"QuakePaletteImportPlugin",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/import_plugins/quake_palette_import_plugin.gd"
 }, {
 "base": "Resource",
-"class": "QuakeWadFile",
-"language": "GDScript",
+"class": &"QuakeWadFile",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/quake_wad_file.gd"
 }, {
 "base": "EditorImportPlugin",
-"class": "QuakeWadImportPlugin",
-"language": "GDScript",
+"class": &"QuakeWadImportPlugin",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/import_plugins/quake_wad_import_plugin.gd"
 }, {
-"base": "KinematicBody",
-"class": "RotateEntity",
-"language": "GDScript",
+"base": "CharacterBody3D",
+"class": &"RotateEntity",
+"language": &"GDScript",
 "path": "res://fgd/RotateEntity.gd"
 }, {
-"base": "Resource",
-"class": "TimeOfDaySettings",
-"language": "GDScript",
-"path": "res://resources/TimeOfDaySettings.gd"
+"base": "LiquidLayer",
+"class": &"SlimeLayer",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/slime.gd"
 }, {
 "base": "Resource",
-"class": "TrenchBroomFaceAttrib",
-"language": "GDScript",
+"class": &"TrenchBroomFaceAttrib",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_face_attrib.gd"
 }, {
 "base": "Resource",
-"class": "TrenchBroomGameConfigFile",
-"language": "GDScript",
+"class": &"TrenchBroomGameConfigFile",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_game_config_file.gd"
 }, {
 "base": "Resource",
-"class": "TrenchBroomGameConfigFolder",
-"language": "GDScript",
+"class": &"TrenchBroomGameConfigFolder",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_game_config_folder.gd"
 }, {
 "base": "Resource",
-"class": "TrenchBroomTag",
-"language": "GDScript",
+"class": &"TrenchBroomTag",
+"language": &"GDScript",
 "path": "res://addons/qodot/src/resources/game-definitions/trenchbroom/trenchbroom_tag.gd"
 }, {
-"base": "Area",
-"class": "Trigger",
-"language": "GDScript",
+"base": "Area3D",
+"class": &"Trigger",
+"language": &"GDScript",
 "path": "res://fgd/Trigger.gd"
-} ]
+}, {
+"base": "LiquidLayer",
+"class": &"WaterLayer",
+"language": &"GDScript",
+"path": "res://addons/qodot/game_definitions/worldspawn_layers/liquid/water.gd"
+}]
 _global_script_class_icons={
 "DoorEntity": "",
-"LineUpMeshInstance": "",
-"MergeToMultiMesh": "",
-"Player": "",
+"LavaLayer": "",
+"LiquidLayer": "",
+"OrbitArm": "",
+"PhysicsBall": "",
+"PhysicsEntity": "",
 "QodotDependencies": "",
 "QodotEntity": "",
 "QodotFGDBaseClass": "",
@@ -179,6 +201,7 @@ _global_script_class_icons={
 "QodotLight": "",
 "QodotMap": "",
 "QodotPlugin": "",
+"QodotRotateEntity": "",
 "QodotSpatial": "res://addons/qodot/icons/icon_qodot_spatial.svg",
 "QodotTextureLoader": "",
 "QodotUtil": "",
@@ -190,12 +213,13 @@ _global_script_class_icons={
 "QuakeWadFile": "",
 "QuakeWadImportPlugin": "",
 "RotateEntity": "",
-"TimeOfDaySettings": "",
+"SlimeLayer": "",
 "TrenchBroomFaceAttrib": "",
 "TrenchBroomGameConfigFile": "",
 "TrenchBroomGameConfigFolder": "",
 "TrenchBroomTag": "",
-"Trigger": ""
+"Trigger": "",
+"WaterLayer": ""
 }
 
 [application]
@@ -203,9 +227,10 @@ _global_script_class_icons={
 config/name="Project Summer Island"
 run/main_scene="res://Main.tscn"
 boot_splash/image="res://assets/ui/Splash.png"
-boot_splash/bg_color=Color( 1, 1, 1, 1 )
+boot_splash/bg_color=Color(1, 1, 1, 1)
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
+config/features=PackedStringArray("4.0")
 
 [autoload]
 
@@ -220,7 +245,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "SIsilicon.vfx.godrays", "qodot" )
+enabled=PackedStringArray("res://addons/qodot/plugin.cfg")
 
 [importer_defaults]
 
@@ -1300,64 +1325,64 @@ scene={
 
 move_forward={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 move_backward={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 strafe_left={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 strafe_right={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 ascend={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 descend={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 sprint={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 flashlight={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 toggle_ui={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"unicode":0,"echo":false,"script":null)
-, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 noclip={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":84,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 zoom_view={
 "deadzone": 0.5,
-"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
- ]
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":2,"pressed":false,"double_click":false,"script":null)
+]
 }
 toggle_bobbing={
 "deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
- ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"store_command":true,"alt_pressed":false,"shift_pressed":false,"meta_pressed":false,"command_pressed":false,"pressed":false,"keycode":0,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
 }
 
 [layer_names]

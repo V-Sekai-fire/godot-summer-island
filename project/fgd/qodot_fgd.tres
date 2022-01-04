@@ -12,7 +12,7 @@
 [resource]
 script = ExtResource( 6 )
 export_file = false
-target_folder = "D:/_gamedev/summer_island/Project-Summer-Island/project/fgd"
+target_folder = "C:/Users/elee/Documents/Project-Summer-Island/project/fgd"
 fgd_name = "Qodot"
 base_fgd_files = [  ]
 entity_definitions = [ ExtResource( 2 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 12 ) ]

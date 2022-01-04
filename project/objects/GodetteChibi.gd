@@ -1,5 +1,5 @@
-tool
-extends Spatial
+@tool
+extends Node3D
 
 enum Anims {T_POSE, STANDING, TADA, SALUTE, THINKING, FIGHT, RUNNING, PEWPEW, JUMPING, NUMBERONEIDOL}
 
