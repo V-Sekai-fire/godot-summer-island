@@ -19,3 +19,5 @@ autosave/
 # Things temporary or assets I have no rights to use. Reference purpose
 _TEMP_THEFT_ASSETS/
 _LABS/
+
+project/.godot/
